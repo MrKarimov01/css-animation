@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: sans-serif;
+    background: url("./img/backgroun.jpg") center center no-repeat, linear-gradient(135deg,rgba(255,255,255,0.1) ,rgba(255,255,255,0));
+    background-size: cover;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+
+
+}
+
+.my__card{
+    width: 350px;
+    height: 500px;
+    background: transparent;
+    border-radius: 20px;
+    position: relative;
+    margin: 5px;
+    
+}
+.my__card img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-out;
+    transform: scale(1);
+    object-fit: cover;
+    position: absolute;
+    z-index: 5;
+
+ 
+}
+.my__card:hover img{
+    transform: scale(.5) translateY(-30%);
+    
+}
+.green__card{
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    background: #2D9BF8;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    top: 0;
+}
+.darkgreen__card{
+position: absolute;
+width: 100%;
+height: 70%;
+background: #23354B;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+bottom: 0px;
+
+}
+.about__item .name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    
+}
+.about__item .kasb{
+    color: #2D9BF8;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+.about__item ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    margin-top: 10px;
+}
+.about__item ul li{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    background-color: #2E4E70;
+    border-radius: 50%;
+    box-shadow: 0  0 2px #2E4E70;
+}
+.about__item ul li:first-child{
+    margin: 0;
+
+}
+.about__item ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    border-radius: 100%;
+    transition: 0.3s;
+    
+}
+.about__item ul li a:hover{
+    background-color: #2D9BF8;
+    transform: rotate(360deg);
+}
+.my__card:hover .about__item{
+    opacity: 1;
+    bottom: 30px;
+    transition: 0.3s all ;
+}
+.about__item{
+    text-align: center;
+    bottom: 20px;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+   
+}
